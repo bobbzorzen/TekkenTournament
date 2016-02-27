@@ -1,0 +1,4 @@
+<Directory /home/*/www>
+Options +ExecCGI
+AddHandler cgi-script .cgi
+</Directory>

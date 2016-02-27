@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Tekken Tournament</title>
+        <link rel="shortcut icon" href="favicon.ico" />
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/custom-font-icons.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container-fluid">
+            
+            <div class="row small-uncollapse ">
+                <div class="small-8 column user-list">
+                    <div class="row collapse content-container">
+                        <div class="small-12 column add-player-field">
+                            <div class="button radius full-width">
+                                Add new contestant
+                            </div>
+                            <ul>
+                                <li><span class="name">Player 1</span><span class="score">15 p</span></li>
+                                <li><span class="name">Player 2</span><span class="score">11 p</span></li>
+                                <li><span class="name">Player 3</span><span class="score">10 p</span></li>
+                                <li><span class="name">Player 4</span><span class="score">8 p</span></li>
+                                <li class="selected"><span class="name">Player 5</span><span class="score">3 p</span></li>
+                                <li><span class="name">Player 6</span><span class="score">1 p</span></li>
+                                <li><span class="name">Player 7</span><span class="score">1 p</span></li>
+                                <li><span class="name">Player 8</span><span class="score">1 p</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-4 column content-container game-status">
+                    <div class="row collapse">
+                        <div class="small-12 column add-player-field">
+                            <div class="center-text versus-text full-width">
+                                <span class="player1">Player 5</span>
+                            </div>
+                            <div class="center-text full-width">
+                                <span class="vs">VS</span>
+                            </div>
+                            <div class="center-text versus-text full-width">
+                                <span class="player2">???</span>
+                            </div>
+                            <a href="#" class="cancel-match">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script src="js/foundation/foundation.reveal.js"></script>
+        <script src="js/Player.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            $(document).foundation();
+        </script>
+    </body>
+</html>
