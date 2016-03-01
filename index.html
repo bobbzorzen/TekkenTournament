@@ -28,18 +28,11 @@
                 <div class="small-8 column user-list">
                     <div class="row collapse content-container">
                         <div class="small-12 column add-player-field">
-                            <div class="button radius full-width">
+                            <div class="button radius full-width" data-reveal-id="add-player-modal">
                                 Add new contestant
                             </div>
+                            <p>Click on contestants</p>
                             <ul>
-                                <li><span class="name">Player 1</span><span class="score">15 p</span></li>
-                                <li><span class="name">Player 2</span><span class="score">11 p</span></li>
-                                <li><span class="name">Player 3</span><span class="score">10 p</span></li>
-                                <li><span class="name">Player 4</span><span class="score">8 p</span></li>
-                                <li class="selected"><span class="name">Player 5</span><span class="score">3 p</span></li>
-                                <li><span class="name">Player 6</span><span class="score">1 p</span></li>
-                                <li><span class="name">Player 7</span><span class="score">1 p</span></li>
-                                <li><span class="name">Player 8</span><span class="score">1 p</span></li>
                             </ul>
                         </div>
                     </div>
@@ -47,13 +40,14 @@
                 <div class="small-4 column content-container game-status">
                     <div class="row collapse">
                         <div class="small-12 column add-player-field">
-                            <div class="center-text versus-text full-width">
-                                <span class="player1">Player 5</span>
+                            <p>Click on the winner</p>
+                            <div class="center-text versus-text full-width player1-box">
+                                <span class="player1">???</span>
                             </div>
                             <div class="center-text full-width">
                                 <span class="vs">VS</span>
                             </div>
-                            <div class="center-text versus-text full-width">
+                            <div class="center-text versus-text full-width player2-box">
                                 <span class="player2">???</span>
                             </div>
                             <a href="#" class="cancel-match">Cancel</a>
@@ -62,6 +56,16 @@
                 </div>
                 
             </div>
+        </div>
+        <div id="add-player-modal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <h2 id="modalTitle">Enter data and submit</h2>
+            <label class="name">Name</label>
+            <input class="full-width radius"/>
+            <div id="submit-new-player" class="button radius full-width">
+                Add
+            </div>
+            <p class="status-message"></p>
+            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
         </div>
 
 

@@ -285,6 +285,12 @@ hr {
 .container-fluid {
     margin-top:20px;
 }
+.success {
+    color: green;
+}
+.error {
+    color: red;
+}
 
 
 .content-container {
@@ -305,6 +311,8 @@ hr {
     padding:10px;
     background-color: #f3f3f3;
     border: 1px solid #CCC;
+    cursor: pointer;
+    transition: margin 0.5s;
 }
 .user-list ul li:nth-child(odd) {
     background-color: #ededed;
@@ -329,6 +337,7 @@ hr {
     color: #FFF;
     padding: 10px;
     margin: 10px 0;
+    cursor:pointer;
 }
 .versus-text .player1, 
 .versus-text .player2 {
@@ -345,4 +354,17 @@ hr {
 .cancel-match {
     display:    inline-block;   
     margin-top: 10px;
+}
+
+
+
+#add-player-modal label.name {
+    font-size: 24px;
+
+}
+#add-player-modal input {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 18px;
 }
